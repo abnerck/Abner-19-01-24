@@ -11,7 +11,7 @@
     <center>
         <!-- Título "Personalizarte Imprenta" con el mismo estilo -->
         <div class="feature-box">
-            <h2>Personalizarte Imprenta</h2>
+            <h2>Mextlikalli Imprenta</h2>
         </div>
     </center>
     <div class="container">
@@ -76,14 +76,14 @@
         /* Estilo para el título "Personalizarte Imprenta" */
         h1 {
             font-family: 'Pacifico', cursive;
-            color: aquamarine;
+            color: rgb(0, 122, 82);
             font-size: 36px;
             margin-bottom: 10px;
         }
     
         h2 {
             font-family: 'Pacifico', cursive;
-            color: rgb(97, 152, 133);
+            color: aquamarine;
             font-size: 32px;
             margin-bottom: 10px;
         }
@@ -102,7 +102,8 @@
             showCancelButton: true,
             confirmButtonColor: '#d33',
             cancelButtonColor: '#3085d6',
-            confirmButtonText: 'Sí, eliminarlo'
+            confirmButtonText: '¡Sí, elimínalo!',
+            cancelButtonText: '¡Cáncelalo!'
         }).then((result) => {
             if (result.isConfirmed) {
                 // Si el usuario confirma, envía el formulario de eliminación
@@ -111,24 +112,7 @@
         });
     }
 </script>
-<script>
-    function confirmDelete() {
-        Swal.fire({
-            title: '¿Estás seguro?',
-            text: '¡No podrás revertir esto!',
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#d33',
-            cancelButtonColor: '#3085d6',
-            confirmButtonText: 'Sí, eliminarlo'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                // Si el usuario confirma, envía el formulario de eliminación
-                document.getElementById('deleteForm').submit();
-            }
-        });
-    }
-</script>
+
 
 
 {% endblock %}

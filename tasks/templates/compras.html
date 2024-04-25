@@ -22,7 +22,7 @@
             <input type="text" class="form-control" id="filtroProveedor">
         </div>
         <div class="mb-3">
-            <label for="filtroEmpleado" class="form-label">Buscar por Tipo de empleado:</label>
+            <label for="filtroEmpleado" class="form-label">Buscar por empleado:</label>
             <input type="text" class="form-control" id="filtroEmpleado">
         </div>
 
@@ -187,7 +187,7 @@
             table
                 .columns(3)
                 .search($('#filtroProveedor').val())
-                .columns(5)
+                .columns(6)
                 .search($('#filtroEmpleado').val())
                 .draw();
         });

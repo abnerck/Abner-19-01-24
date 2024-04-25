@@ -347,12 +347,12 @@ class IncidenteLaboral(models.Model):
 
 class Opionion(models.Model):
     QUEJA = 'Queja'
-    OPINION = ' '
+    OPINION = 'Opinión'
     SUGERENCIA = 'Sugerencia'
 
     ESTADO_CHOICES = [
         (QUEJA, 'Queja'),
-        (OPINION, 'Opinion'),
+        (OPINION, 'Opinión'),
         (SUGERENCIA, 'Sugerencia'),
     ]
 

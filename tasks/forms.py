@@ -7,7 +7,7 @@ class TaksForm(ModelForm):
         fields = ['title', 'description','important','estadotarea','NotasTarea','Comentarios',]
         labels ={
             'title': 'Nombre de la tarea',
-            'description' : 'Descripcion',
+            'description' : 'Descripciòn',
             'important': 'Es importante',
             'estadotarea':'Estado de la tarea',
             'NotasTarea':'Notas de tarea'
@@ -154,8 +154,8 @@ class OpionionForm(ModelForm):
             'Correo':'Correo',
             'FechaRegistro':'Fecha de registro',
             'tipo':'Tipo',
-            'descripcion':'Descripcion',
-            'calificacion':'Calificacion'
+            'descripcion':'Descripciòn',
+            'calificacion':'Calificaciòn'
         }
 
 class HerramientaForm(ModelForm):
